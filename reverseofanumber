@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() 
+{
+int n,rev=0,sum;
+printf("enter n:");
+scanf("%d",&n);
+while(n>0)
+{
+    sum=n%10;
+    rev=rev*10+sum;
+    n=n/10;
+}
+    printf("the reverse of a number:%d",rev);
+}
